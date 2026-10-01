@@ -1,0 +1,10 @@
+name: Build APK
+on:
+push:
+branches: [ main ]
+workflow_dispatch:  # 支持手动触发
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
